@@ -76,7 +76,7 @@ Public Class frmEmailSettings
                 oSQL = New clsSqlConn
             End If
             If oSQLQuery = String.Empty Then
-                oSQLQuery = "SELECT ModuleName, DefaultCCEmail, DefaultSender,DefaultSenderEmail FROM spilEmailCCDefault"
+                oSQLQuery = "SELECT ModuleName, DefaultCCEmail, DefaultBccEmail, DefaultSender,DefaultSenderEmail FROM spilEmailCCDefault"
             End If
             dsValues = oSQL.GET_INSERT_UPDATE(oSQLQuery)
             Return dsValues
@@ -93,32 +93,53 @@ Public Class frmEmailSettings
         Try
             Dim dsCCEmail As DataSet = EmailCCDataGet(oSQLQuery)
             For Each dr As DataRow In dsCCEmail.Tables(0).Rows
-                'Dim txtFieldName = Replace(dr("moduleName"), " ", "")
+                'Cc
                 If dr("moduleName") = "SalesOrder" Then
                     utxtSalesOrder.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtSalesOrderBcc.Value = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                 ElseIf dr("moduleName") = "ProformaInvoice" Then
                     utxtProformaInvoice.Text = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtProformaInvoice.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                 ElseIf dr("moduleName") = "OrderConfirmation" Then
                     utxtOrderConfirmation.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtOrderConfirmationBcc.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                 ElseIf dr("moduleName") = "TaxInvoice" Then
                     utxtTaxInvoice.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtTaxInvoiceBcc.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                     If dr("DefaultSenderEmail") <> "" Then
                         uChkSetDefault.Checked = True
                     Else
                         uChkSetDefault.Checked = False
                     End If
+
                     isSetDefAccount = dr("DefaultSender")
                     utxtTaxInvoice.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtTaxInvoiceBcc.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                 ElseIf dr("moduleName") = "Quotation" Then
                     utxtQuotation.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtQuotationBcc.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                 ElseIf dr("moduleName") = "NCR" Then
                     utxtNCR.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtNCRBcc.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                 ElseIf dr("moduleName") = "CreditNote" Then
                     utxtCreditNote.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtCreditNoteBcc.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                 ElseIf dr("moduleName") = "DeliveryDocket" Then
                     utxtDeliveryDocket.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtDeliveryDocketBcc.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                 ElseIf dr("moduleName") = "Statment" Then
                     utxtStatment.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
+                    utxtStatmentBcc.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+
                 End If
             Next
         Catch ex As Exception
@@ -136,22 +157,40 @@ Public Class frmEmailSettings
             For Each dr As DataRow In ds.Tables(0).Rows
                 If dr("moduleName") = "SalesOrder" Then
                     dr("defaultCCEmail") = IIf(utxtSalesOrder.Value = Nothing, "", utxtSalesOrder.Value)
+                    dr("defaultBccEmail") = IIf(utxtSalesOrderBcc.Value = Nothing, "", utxtSalesOrderBcc.Value)
+
                 ElseIf dr("moduleName") = "ProformaInvoice" Then
                     dr("defaultCCEmail") = IIf(utxtProformaInvoice.Value = Nothing, "", utxtProformaInvoice.Value)
+                    dr("defaultBccEmail") = IIf(utxtProformaInvoiceBcc.Value = Nothing, "", utxtProformaInvoiceBcc.Value)
+
                 ElseIf dr("moduleName") = "OrderConfirmation" Then
                     dr("defaultCCEmail") = IIf(utxtOrderConfirmation.Value = Nothing, "", utxtOrderConfirmation.Value)
+                    dr("defaultBccEmail") = IIf(utxtOrderConfirmationBcc.Value = Nothing, "", utxtOrderConfirmationBcc.Value)
+
                 ElseIf dr("moduleName") = "TaxInvoice" Then
                     dr("defaultCCEmail") = IIf(utxtTaxInvoice.Value = Nothing, "", utxtTaxInvoice.Value)
+                    dr("defaultBccEmail") = IIf(utxtTaxInvoiceBcc.Value = Nothing, "", utxtTaxInvoiceBcc.Value)
+
                 ElseIf dr("moduleName") = "Quotation" Then
                     dr("defaultCCEmail") = IIf(utxtQuotation.Value = Nothing, "", utxtQuotation.Value)
+                    dr("defaultBccEmail") = IIf(utxtQuotationBcc.Value = Nothing, "", utxtQuotationBcc.Value)
+
                 ElseIf dr("moduleName") = "NCR" Then
                     dr("defaultCCEmail") = IIf(utxtNCR.Value = Nothing, "", utxtNCR.Value)
+                    dr("defaultBccEmail") = IIf(utxtNCRBcc.Value = Nothing, "", utxtNCRBcc.Value)
+
                 ElseIf dr("moduleName") = "CreditNote" Then
                     dr("defaultCCEmail") = IIf(utxtCreditNote.Value = Nothing, "", utxtCreditNote.Value)
+                    dr("defaultBccEmail") = IIf(utxtCreditNoteBcc.Value = Nothing, "", utxtCreditNoteBcc.Value)
+
                 ElseIf dr("moduleName") = "DeliveryDocket" Then
                     dr("defaultCCEmail") = IIf(utxtDeliveryDocket.Value = Nothing, "", utxtDeliveryDocket.Value)
+                    dr("defaultBccEmail") = IIf(utxtDeliveryDocketBcc.Value = Nothing, "", utxtDeliveryDocketBcc.Value)
+
                 ElseIf dr("moduleName") = "Statment" Then
                     dr("defaultCCEmail") = IIf(utxtStatment.Value = Nothing, "", utxtStatment.Value)
+                    dr("defaultBccEmail") = IIf(utxtStatmentBcc.Value = Nothing, "", utxtStatmentBcc.Value)
+
                 End If
             Next
             'Email fields validations
@@ -174,6 +213,24 @@ Public Class frmEmailSettings
                         End If
                     End If
                 End If
+                If dr("defaultBccEmail") <> String.Empty Then
+                    If dr("defaultCCEmail").Contains(";") Then
+                        Dim emailddress As String() = Split(dr("defaultBccEmail"), ";")
+                        Dim i As Integer
+                        For i = 0 To UBound(emailddress)
+                            Dim emailWithoutSpace As String = emailddress(i)
+                            If IsValidEmailFormat(emailWithoutSpace.Replace(" ", "")) = False Then
+                                MsgBox("Please enter a valid email address")
+                                Exit Sub
+                            End If
+                        Next
+                    Else
+                        If IsValidEmailFormat(dr("defaultBccEmail")) = False Then
+                            MsgBox("Please enter a valid email address")
+                            Exit Sub
+                        End If
+                    End If
+                End If
             Next
 
             If IsNothing(oSQL) Then
@@ -186,7 +243,7 @@ Public Class frmEmailSettings
                 Exit Sub
             End If
             oSQL.Commit_Trans()
-            If MsgBox("Default CC emails saved successfully! Do you want to exit?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton1, "Confirmation") = MsgBoxResult.Yes Then
+            If MsgBox("Default Cc And Bcc emails saved successfully! Do you want to exit?", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton1, "Confirmation") = MsgBoxResult.Yes Then
                 Me.Close()
             Else
                 'dataset()
@@ -205,7 +262,7 @@ Public Class frmEmailSettings
             oSQLQuery = ""
             Dim bError As Boolean = False
             For Each dr As DataRow In ds.Tables(0).Rows
-                oSQLQuery = "UPDATE spilEmailCCDefault SET DefaultCCEmail = '" & dr("DefaultCCEmail") & "'  WHERE ModuleName = '" & dr("ModuleName") & "'  "
+                oSQLQuery = "UPDATE spilEmailCCDefault SET DefaultCCEmail = '" & dr("DefaultCCEmail") & "', DefaultBccEmail = '" & dr("DefaultBccEmail") & "' WHERE ModuleName = '" & dr("ModuleName") & "'  "
                 If oSQLNew.Exe_Query_Trans(oSQLQuery) = 0 Then
                     bError = True
                 End If

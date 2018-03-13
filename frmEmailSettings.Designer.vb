@@ -194,7 +194,7 @@ Partial Class frmEmailSettings
         Me.utxtOrderConfirmationBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.utxtTaxInvoiceBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.utxtQuotationBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtNCRBccs = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtNCRBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.utxtCreditNoteBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.utxtDeliveryDocketBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.utxtStatmentBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
@@ -255,7 +255,7 @@ Partial Class frmEmailSettings
         CType(Me.utxtOrderConfirmationBcc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.utxtTaxInvoiceBcc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.utxtQuotationBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtNCRBccs, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtNCRBcc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.utxtCreditNoteBcc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.utxtDeliveryDocketBcc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.utxtStatmentBcc, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1434,12 +1434,12 @@ Partial Class frmEmailSettings
         Me.utxtQuotationBcc.Size = New System.Drawing.Size(220, 21)
         Me.utxtQuotationBcc.TabIndex = 1
         '
-        'utxtNCRBccs
+        'utxtNCRBcc
         '
-        Me.utxtNCRBccs.Location = New System.Drawing.Point(8, 172)
-        Me.utxtNCRBccs.Name = "utxtNCRBccs"
-        Me.utxtNCRBccs.Size = New System.Drawing.Size(220, 21)
-        Me.utxtNCRBccs.TabIndex = 1
+        Me.utxtNCRBcc.Location = New System.Drawing.Point(8, 172)
+        Me.utxtNCRBcc.Name = "utxtNCRBcc"
+        Me.utxtNCRBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtNCRBcc.TabIndex = 1
         '
         'utxtCreditNoteBcc
         '
@@ -1490,7 +1490,7 @@ Partial Class frmEmailSettings
         Me.GroupBox2.Controls.Add(Me.utxtTaxInvoiceBcc)
         Me.GroupBox2.Controls.Add(Me.utxtCreditNoteBcc)
         Me.GroupBox2.Controls.Add(Me.utxtQuotationBcc)
-        Me.GroupBox2.Controls.Add(Me.utxtNCRBccs)
+        Me.GroupBox2.Controls.Add(Me.utxtNCRBcc)
         Me.GroupBox2.Location = New System.Drawing.Point(399, 7)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(234, 286)
@@ -1577,7 +1577,7 @@ Partial Class frmEmailSettings
         CType(Me.utxtOrderConfirmationBcc, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.utxtTaxInvoiceBcc, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.utxtQuotationBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtNCRBccs, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtNCRBcc, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.utxtCreditNoteBcc, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.utxtDeliveryDocketBcc, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.utxtStatmentBcc, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1669,7 +1669,7 @@ Partial Class frmEmailSettings
     Friend WithEvents utxtStatmentBcc As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents utxtDeliveryDocketBcc As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents utxtCreditNoteBcc As Infragistics.Win.UltraWinEditors.UltraTextEditor
-    Friend WithEvents utxtNCRBccs As Infragistics.Win.UltraWinEditors.UltraTextEditor
+    Friend WithEvents utxtNCRBcc As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents utxtQuotationBcc As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents utxtTaxInvoiceBcc As Infragistics.Win.UltraWinEditors.UltraTextEditor
     Friend WithEvents utxtOrderConfirmationBcc As Infragistics.Win.UltraWinEditors.UltraTextEditor
