@@ -100,7 +100,7 @@ Public Class frmEmailSettings
 
                 ElseIf dr("moduleName") = "ProformaInvoice" Then
                     utxtProformaInvoice.Text = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
-                    utxtProformaInvoice.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
+                    utxtProformaInvoiceBcc.Text = IIf(IsDBNull(dr("defaultBccEmail")), "", dr("defaultBccEmail"))
 
                 ElseIf dr("moduleName") = "OrderConfirmation" Then
                     utxtOrderConfirmation.Value = IIf(IsDBNull(dr("defaultCCEmail")), "", dr("defaultCCEmail"))
