@@ -427,14 +427,4 @@ Public Class frmEmailSettings
         MyBase.Finalize()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim gazingQuote As New frmGlazingQuote()
-        gazingQuote.Show()
-        gazingQuote.Refresh()
-        gazingQuote.WindowState = FormWindowState.Maximized
-    End Sub
-
-    Private Sub frmEmailSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

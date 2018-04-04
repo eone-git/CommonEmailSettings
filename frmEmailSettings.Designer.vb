@@ -139,15 +139,26 @@ Partial Class frmEmailSettings
         Me.UltraTabControl6 = New Infragistics.Win.UltraWinTabControl.UltraTabControl()
         Me.UltraTabSharedControlsPage7 = New Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage()
         Me.UltraTabPageControl5 = New Infragistics.Win.UltraWinTabControl.UltraTabPageControl()
-        Me.utxtStatment = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.utxtSalesOrderBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtProformaInvoiceBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtStatmentBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtOrderConfirmationBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtDeliveryDocketBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtTaxInvoiceBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtCreditNoteBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtQuotationBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtNCRBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.utxtDeliveryDocket = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtCreditNote = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtNCR = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtQuotation = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtTaxInvoice = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtOrderConfirmation = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtProformaInvoice = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.utxtSalesOrder = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtProformaInvoice = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtStatment = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtOrderConfirmation = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtTaxInvoice = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtQuotation = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtNCR = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
+        Me.utxtCreditNote = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
         Me.UltraLabel8 = New Infragistics.Win.Misc.UltraLabel()
         Me.UltraLabel9 = New Infragistics.Win.Misc.UltraLabel()
         Me.UltraLabel6 = New Infragistics.Win.Misc.UltraLabel()
@@ -189,17 +200,6 @@ Partial Class frmEmailSettings
         Me.UltraTabControl5 = New Infragistics.Win.UltraWinTabControl.UltraTabControl()
         Me.UltraTabSharedControlsPage1 = New Infragistics.Win.UltraWinTabControl.UltraTabSharedControlsPage()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.utxtSalesOrderBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtProformaInvoiceBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtOrderConfirmationBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtTaxInvoiceBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtQuotationBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtNCRBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtCreditNoteBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtDeliveryDocketBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.utxtStatmentBcc = New Infragistics.Win.UltraWinEditors.UltraTextEditor()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.UltraTabPageControl1.SuspendLayout()
         CType(Me.txtQuote, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UltraTabPageControl2.SuspendLayout()
@@ -219,15 +219,26 @@ Partial Class frmEmailSettings
         CType(Me.UltraTabControl6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UltraTabControl6.SuspendLayout()
         Me.UltraTabPageControl5.SuspendLayout()
-        CType(Me.utxtStatment, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.utxtSalesOrderBcc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtProformaInvoiceBcc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtStatmentBcc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtOrderConfirmationBcc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtDeliveryDocketBcc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtTaxInvoiceBcc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtCreditNoteBcc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtQuotationBcc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtNCRBcc, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.utxtDeliveryDocket, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtCreditNote, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtNCR, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtQuotation, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtTaxInvoice, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtOrderConfirmation, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtProformaInvoice, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.utxtSalesOrder, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtProformaInvoice, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtStatment, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtOrderConfirmation, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtTaxInvoice, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtQuotation, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtNCR, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.utxtCreditNote, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UltraTabPageControl14.SuspendLayout()
         CType(Me.uCmbDeAcc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.uChkSetDefault, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -250,24 +261,13 @@ Partial Class frmEmailSettings
         Me.UltraTabControl3.SuspendLayout()
         CType(Me.UltraTabControl4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UltraTabControl5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtSalesOrderBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtProformaInvoiceBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtOrderConfirmationBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtTaxInvoiceBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtQuotationBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtNCRBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtCreditNoteBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtDeliveryDocketBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.utxtStatmentBcc, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'UltraTabPageControl1
         '
         Me.UltraTabPageControl1.Controls.Add(Me.UltraLabel11)
         Me.UltraTabPageControl1.Controls.Add(Me.txtQuote)
-        Me.UltraTabPageControl1.Location = New System.Drawing.Point(-10000, -10000)
+        Me.UltraTabPageControl1.Location = New System.Drawing.Point(1, 22)
         Me.UltraTabPageControl1.Name = "UltraTabPageControl1"
         Me.UltraTabPageControl1.Size = New System.Drawing.Size(699, 453)
         '
@@ -290,6 +290,7 @@ Partial Class frmEmailSettings
         Me.txtQuote.Name = "txtQuote"
         Me.txtQuote.Size = New System.Drawing.Size(679, 347)
         Me.txtQuote.TabIndex = 0
+        Me.txtQuote.Text = "l"
         '
         'UltraTabPageControl2
         '
@@ -423,7 +424,7 @@ Partial Class frmEmailSettings
         Me.UltraTabPageControl13.Controls.Add(Me.utxtEmailNtfyBody)
         Me.UltraTabPageControl13.Controls.Add(Me.utxtEmailNtfySubject)
         Me.UltraTabPageControl13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UltraTabPageControl13.Location = New System.Drawing.Point(1, 22)
+        Me.UltraTabPageControl13.Location = New System.Drawing.Point(-10000, -10000)
         Me.UltraTabPageControl13.Name = "UltraTabPageControl13"
         Me.UltraTabPageControl13.Size = New System.Drawing.Size(699, 453)
         '
@@ -464,7 +465,7 @@ Partial Class frmEmailSettings
         'UltraTabPageControl4
         '
         Me.UltraTabPageControl4.Controls.Add(Me.UltraTabControl6)
-        Me.UltraTabPageControl4.Location = New System.Drawing.Point(-10000, -10000)
+        Me.UltraTabPageControl4.Location = New System.Drawing.Point(1, 22)
         Me.UltraTabPageControl4.Name = "UltraTabPageControl4"
         Me.UltraTabPageControl4.Size = New System.Drawing.Size(701, 417)
         '
@@ -520,16 +521,108 @@ Partial Class frmEmailSettings
         Me.UltraTabPageControl5.Controls.Add(Me.UltraLabel7)
         Me.UltraTabPageControl5.Controls.Add(Me.UltraLabel2)
         Me.UltraTabPageControl5.Controls.Add(Me.UltraLabel1)
-        Me.UltraTabPageControl5.Location = New System.Drawing.Point(1, 22)
+        Me.UltraTabPageControl5.Location = New System.Drawing.Point(-10000, -10000)
         Me.UltraTabPageControl5.Name = "UltraTabPageControl5"
         Me.UltraTabPageControl5.Size = New System.Drawing.Size(701, 417)
         '
-        'utxtStatment
+        'GroupBox2
         '
-        Me.utxtStatment.Location = New System.Drawing.Point(6, 257)
-        Me.utxtStatment.Name = "utxtStatment"
-        Me.utxtStatment.Size = New System.Drawing.Size(220, 21)
-        Me.utxtStatment.TabIndex = 1
+        Me.GroupBox2.Controls.Add(Me.utxtSalesOrderBcc)
+        Me.GroupBox2.Controls.Add(Me.utxtProformaInvoiceBcc)
+        Me.GroupBox2.Controls.Add(Me.utxtStatmentBcc)
+        Me.GroupBox2.Controls.Add(Me.utxtOrderConfirmationBcc)
+        Me.GroupBox2.Controls.Add(Me.utxtDeliveryDocketBcc)
+        Me.GroupBox2.Controls.Add(Me.utxtTaxInvoiceBcc)
+        Me.GroupBox2.Controls.Add(Me.utxtCreditNoteBcc)
+        Me.GroupBox2.Controls.Add(Me.utxtQuotationBcc)
+        Me.GroupBox2.Controls.Add(Me.utxtNCRBcc)
+        Me.GroupBox2.Location = New System.Drawing.Point(399, 7)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(234, 286)
+        Me.GroupBox2.TabIndex = 2
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Bcc"
+        '
+        'utxtSalesOrderBcc
+        '
+        Me.utxtSalesOrderBcc.Location = New System.Drawing.Point(8, 27)
+        Me.utxtSalesOrderBcc.Name = "utxtSalesOrderBcc"
+        Me.utxtSalesOrderBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtSalesOrderBcc.TabIndex = 1
+        '
+        'utxtProformaInvoiceBcc
+        '
+        Me.utxtProformaInvoiceBcc.Location = New System.Drawing.Point(8, 56)
+        Me.utxtProformaInvoiceBcc.Name = "utxtProformaInvoiceBcc"
+        Me.utxtProformaInvoiceBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtProformaInvoiceBcc.TabIndex = 1
+        '
+        'utxtStatmentBcc
+        '
+        Me.utxtStatmentBcc.Location = New System.Drawing.Point(8, 257)
+        Me.utxtStatmentBcc.Name = "utxtStatmentBcc"
+        Me.utxtStatmentBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtStatmentBcc.TabIndex = 1
+        '
+        'utxtOrderConfirmationBcc
+        '
+        Me.utxtOrderConfirmationBcc.Location = New System.Drawing.Point(8, 85)
+        Me.utxtOrderConfirmationBcc.Name = "utxtOrderConfirmationBcc"
+        Me.utxtOrderConfirmationBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtOrderConfirmationBcc.TabIndex = 1
+        '
+        'utxtDeliveryDocketBcc
+        '
+        Me.utxtDeliveryDocketBcc.Location = New System.Drawing.Point(8, 230)
+        Me.utxtDeliveryDocketBcc.Name = "utxtDeliveryDocketBcc"
+        Me.utxtDeliveryDocketBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtDeliveryDocketBcc.TabIndex = 1
+        '
+        'utxtTaxInvoiceBcc
+        '
+        Me.utxtTaxInvoiceBcc.Location = New System.Drawing.Point(8, 114)
+        Me.utxtTaxInvoiceBcc.Name = "utxtTaxInvoiceBcc"
+        Me.utxtTaxInvoiceBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtTaxInvoiceBcc.TabIndex = 1
+        '
+        'utxtCreditNoteBcc
+        '
+        Me.utxtCreditNoteBcc.Location = New System.Drawing.Point(8, 203)
+        Me.utxtCreditNoteBcc.Name = "utxtCreditNoteBcc"
+        Me.utxtCreditNoteBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtCreditNoteBcc.TabIndex = 1
+        '
+        'utxtQuotationBcc
+        '
+        Me.utxtQuotationBcc.Location = New System.Drawing.Point(8, 143)
+        Me.utxtQuotationBcc.Name = "utxtQuotationBcc"
+        Me.utxtQuotationBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtQuotationBcc.TabIndex = 1
+        '
+        'utxtNCRBcc
+        '
+        Me.utxtNCRBcc.Location = New System.Drawing.Point(8, 172)
+        Me.utxtNCRBcc.Name = "utxtNCRBcc"
+        Me.utxtNCRBcc.Size = New System.Drawing.Size(220, 21)
+        Me.utxtNCRBcc.TabIndex = 1
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.utxtDeliveryDocket)
+        Me.GroupBox1.Controls.Add(Me.utxtSalesOrder)
+        Me.GroupBox1.Controls.Add(Me.utxtProformaInvoice)
+        Me.GroupBox1.Controls.Add(Me.utxtStatment)
+        Me.GroupBox1.Controls.Add(Me.utxtOrderConfirmation)
+        Me.GroupBox1.Controls.Add(Me.utxtTaxInvoice)
+        Me.GroupBox1.Controls.Add(Me.utxtQuotation)
+        Me.GroupBox1.Controls.Add(Me.utxtNCR)
+        Me.GroupBox1.Controls.Add(Me.utxtCreditNote)
+        Me.GroupBox1.Location = New System.Drawing.Point(150, 7)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(232, 286)
+        Me.GroupBox1.TabIndex = 2
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Cc"
         '
         'utxtDeliveryDocket
         '
@@ -538,40 +631,12 @@ Partial Class frmEmailSettings
         Me.utxtDeliveryDocket.Size = New System.Drawing.Size(220, 21)
         Me.utxtDeliveryDocket.TabIndex = 1
         '
-        'utxtCreditNote
+        'utxtSalesOrder
         '
-        Me.utxtCreditNote.Location = New System.Drawing.Point(6, 203)
-        Me.utxtCreditNote.Name = "utxtCreditNote"
-        Me.utxtCreditNote.Size = New System.Drawing.Size(220, 21)
-        Me.utxtCreditNote.TabIndex = 1
-        '
-        'utxtNCR
-        '
-        Me.utxtNCR.Location = New System.Drawing.Point(6, 172)
-        Me.utxtNCR.Name = "utxtNCR"
-        Me.utxtNCR.Size = New System.Drawing.Size(220, 21)
-        Me.utxtNCR.TabIndex = 1
-        '
-        'utxtQuotation
-        '
-        Me.utxtQuotation.Location = New System.Drawing.Point(6, 143)
-        Me.utxtQuotation.Name = "utxtQuotation"
-        Me.utxtQuotation.Size = New System.Drawing.Size(220, 21)
-        Me.utxtQuotation.TabIndex = 1
-        '
-        'utxtTaxInvoice
-        '
-        Me.utxtTaxInvoice.Location = New System.Drawing.Point(6, 114)
-        Me.utxtTaxInvoice.Name = "utxtTaxInvoice"
-        Me.utxtTaxInvoice.Size = New System.Drawing.Size(220, 21)
-        Me.utxtTaxInvoice.TabIndex = 1
-        '
-        'utxtOrderConfirmation
-        '
-        Me.utxtOrderConfirmation.Location = New System.Drawing.Point(6, 85)
-        Me.utxtOrderConfirmation.Name = "utxtOrderConfirmation"
-        Me.utxtOrderConfirmation.Size = New System.Drawing.Size(220, 21)
-        Me.utxtOrderConfirmation.TabIndex = 1
+        Me.utxtSalesOrder.Location = New System.Drawing.Point(6, 27)
+        Me.utxtSalesOrder.Name = "utxtSalesOrder"
+        Me.utxtSalesOrder.Size = New System.Drawing.Size(220, 21)
+        Me.utxtSalesOrder.TabIndex = 1
         '
         'utxtProformaInvoice
         '
@@ -580,12 +645,47 @@ Partial Class frmEmailSettings
         Me.utxtProformaInvoice.Size = New System.Drawing.Size(220, 21)
         Me.utxtProformaInvoice.TabIndex = 1
         '
-        'utxtSalesOrder
+        'utxtStatment
         '
-        Me.utxtSalesOrder.Location = New System.Drawing.Point(6, 27)
-        Me.utxtSalesOrder.Name = "utxtSalesOrder"
-        Me.utxtSalesOrder.Size = New System.Drawing.Size(220, 21)
-        Me.utxtSalesOrder.TabIndex = 1
+        Me.utxtStatment.Location = New System.Drawing.Point(6, 257)
+        Me.utxtStatment.Name = "utxtStatment"
+        Me.utxtStatment.Size = New System.Drawing.Size(220, 21)
+        Me.utxtStatment.TabIndex = 1
+        '
+        'utxtOrderConfirmation
+        '
+        Me.utxtOrderConfirmation.Location = New System.Drawing.Point(6, 85)
+        Me.utxtOrderConfirmation.Name = "utxtOrderConfirmation"
+        Me.utxtOrderConfirmation.Size = New System.Drawing.Size(220, 21)
+        Me.utxtOrderConfirmation.TabIndex = 1
+        '
+        'utxtTaxInvoice
+        '
+        Me.utxtTaxInvoice.Location = New System.Drawing.Point(6, 114)
+        Me.utxtTaxInvoice.Name = "utxtTaxInvoice"
+        Me.utxtTaxInvoice.Size = New System.Drawing.Size(220, 21)
+        Me.utxtTaxInvoice.TabIndex = 1
+        '
+        'utxtQuotation
+        '
+        Me.utxtQuotation.Location = New System.Drawing.Point(6, 143)
+        Me.utxtQuotation.Name = "utxtQuotation"
+        Me.utxtQuotation.Size = New System.Drawing.Size(220, 21)
+        Me.utxtQuotation.TabIndex = 1
+        '
+        'utxtNCR
+        '
+        Me.utxtNCR.Location = New System.Drawing.Point(6, 172)
+        Me.utxtNCR.Name = "utxtNCR"
+        Me.utxtNCR.Size = New System.Drawing.Size(220, 21)
+        Me.utxtNCR.TabIndex = 1
+        '
+        'utxtCreditNote
+        '
+        Me.utxtCreditNote.Location = New System.Drawing.Point(6, 203)
+        Me.utxtCreditNote.Name = "utxtCreditNote"
+        Me.utxtCreditNote.Size = New System.Drawing.Size(220, 21)
+        Me.utxtCreditNote.TabIndex = 1
         '
         'UltraLabel8
         '
@@ -1399,105 +1499,6 @@ Partial Class frmEmailSettings
         Me.Button1.UseVisualStyleBackColor = True
         Me.Button1.Visible = False
         '
-        'utxtSalesOrderBcc
-        '
-        Me.utxtSalesOrderBcc.Location = New System.Drawing.Point(8, 27)
-        Me.utxtSalesOrderBcc.Name = "utxtSalesOrderBcc"
-        Me.utxtSalesOrderBcc.Size = New System.Drawing.Size(220, 21)
-        Me.utxtSalesOrderBcc.TabIndex = 1
-        '
-        'utxtProformaInvoiceBcc
-        '
-        Me.utxtProformaInvoiceBcc.Location = New System.Drawing.Point(8, 56)
-        Me.utxtProformaInvoiceBcc.Name = "utxtProformaInvoiceBcc"
-        Me.utxtProformaInvoiceBcc.Size = New System.Drawing.Size(220, 21)
-        Me.utxtProformaInvoiceBcc.TabIndex = 1
-        '
-        'utxtOrderConfirmationBcc
-        '
-        Me.utxtOrderConfirmationBcc.Location = New System.Drawing.Point(8, 85)
-        Me.utxtOrderConfirmationBcc.Name = "utxtOrderConfirmationBcc"
-        Me.utxtOrderConfirmationBcc.Size = New System.Drawing.Size(220, 21)
-        Me.utxtOrderConfirmationBcc.TabIndex = 1
-        '
-        'utxtTaxInvoiceBcc
-        '
-        Me.utxtTaxInvoiceBcc.Location = New System.Drawing.Point(8, 114)
-        Me.utxtTaxInvoiceBcc.Name = "utxtTaxInvoiceBcc"
-        Me.utxtTaxInvoiceBcc.Size = New System.Drawing.Size(220, 21)
-        Me.utxtTaxInvoiceBcc.TabIndex = 1
-        '
-        'utxtQuotationBcc
-        '
-        Me.utxtQuotationBcc.Location = New System.Drawing.Point(8, 143)
-        Me.utxtQuotationBcc.Name = "utxtQuotationBcc"
-        Me.utxtQuotationBcc.Size = New System.Drawing.Size(220, 21)
-        Me.utxtQuotationBcc.TabIndex = 1
-        '
-        'utxtNCRBcc
-        '
-        Me.utxtNCRBcc.Location = New System.Drawing.Point(8, 172)
-        Me.utxtNCRBcc.Name = "utxtNCRBcc"
-        Me.utxtNCRBcc.Size = New System.Drawing.Size(220, 21)
-        Me.utxtNCRBcc.TabIndex = 1
-        '
-        'utxtCreditNoteBcc
-        '
-        Me.utxtCreditNoteBcc.Location = New System.Drawing.Point(8, 203)
-        Me.utxtCreditNoteBcc.Name = "utxtCreditNoteBcc"
-        Me.utxtCreditNoteBcc.Size = New System.Drawing.Size(220, 21)
-        Me.utxtCreditNoteBcc.TabIndex = 1
-        '
-        'utxtDeliveryDocketBcc
-        '
-        Me.utxtDeliveryDocketBcc.Location = New System.Drawing.Point(8, 230)
-        Me.utxtDeliveryDocketBcc.Name = "utxtDeliveryDocketBcc"
-        Me.utxtDeliveryDocketBcc.Size = New System.Drawing.Size(220, 21)
-        Me.utxtDeliveryDocketBcc.TabIndex = 1
-        '
-        'utxtStatmentBcc
-        '
-        Me.utxtStatmentBcc.Location = New System.Drawing.Point(8, 257)
-        Me.utxtStatmentBcc.Name = "utxtStatmentBcc"
-        Me.utxtStatmentBcc.Size = New System.Drawing.Size(220, 21)
-        Me.utxtStatmentBcc.TabIndex = 1
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.utxtDeliveryDocket)
-        Me.GroupBox1.Controls.Add(Me.utxtSalesOrder)
-        Me.GroupBox1.Controls.Add(Me.utxtProformaInvoice)
-        Me.GroupBox1.Controls.Add(Me.utxtStatment)
-        Me.GroupBox1.Controls.Add(Me.utxtOrderConfirmation)
-        Me.GroupBox1.Controls.Add(Me.utxtTaxInvoice)
-        Me.GroupBox1.Controls.Add(Me.utxtQuotation)
-        Me.GroupBox1.Controls.Add(Me.utxtNCR)
-        Me.GroupBox1.Controls.Add(Me.utxtCreditNote)
-        Me.GroupBox1.Location = New System.Drawing.Point(150, 7)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(232, 286)
-        Me.GroupBox1.TabIndex = 2
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Cc"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.utxtSalesOrderBcc)
-        Me.GroupBox2.Controls.Add(Me.utxtProformaInvoiceBcc)
-        Me.GroupBox2.Controls.Add(Me.utxtStatmentBcc)
-        Me.GroupBox2.Controls.Add(Me.utxtOrderConfirmationBcc)
-        Me.GroupBox2.Controls.Add(Me.utxtDeliveryDocketBcc)
-        Me.GroupBox2.Controls.Add(Me.utxtTaxInvoiceBcc)
-        Me.GroupBox2.Controls.Add(Me.utxtCreditNoteBcc)
-        Me.GroupBox2.Controls.Add(Me.utxtQuotationBcc)
-        Me.GroupBox2.Controls.Add(Me.utxtNCRBcc)
-        Me.GroupBox2.Location = New System.Drawing.Point(399, 7)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(234, 286)
-        Me.GroupBox2.TabIndex = 2
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Bcc"
-        '
         'frmEmailSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1539,15 +1540,28 @@ Partial Class frmEmailSettings
         CType(Me.UltraTabControl6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UltraTabControl6.ResumeLayout(False)
         Me.UltraTabPageControl5.ResumeLayout(False)
-        CType(Me.utxtStatment, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        CType(Me.utxtSalesOrderBcc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtProformaInvoiceBcc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtStatmentBcc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtOrderConfirmationBcc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtDeliveryDocketBcc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtTaxInvoiceBcc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtCreditNoteBcc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtQuotationBcc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtNCRBcc, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.utxtDeliveryDocket, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtCreditNote, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtNCR, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtQuotation, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtTaxInvoice, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtOrderConfirmation, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtProformaInvoice, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.utxtSalesOrder, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtProformaInvoice, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtStatment, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtOrderConfirmation, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtTaxInvoice, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtQuotation, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtNCR, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.utxtCreditNote, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UltraTabPageControl14.ResumeLayout(False)
         Me.UltraTabPageControl14.PerformLayout()
         CType(Me.uCmbDeAcc, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1572,19 +1586,6 @@ Partial Class frmEmailSettings
         Me.UltraTabControl3.ResumeLayout(False)
         CType(Me.UltraTabControl4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UltraTabControl5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtSalesOrderBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtProformaInvoiceBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtOrderConfirmationBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtTaxInvoiceBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtQuotationBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtNCRBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtCreditNoteBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtDeliveryDocketBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.utxtStatmentBcc, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
